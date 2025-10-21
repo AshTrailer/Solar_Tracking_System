@@ -1,32 +1,16 @@
-# _Sample project_
+本项目为 基于 ESP32C6 的太阳能追踪系统，使用 ESP-IDF 开发。  
+系统可通过 WiFi 获取 Stellarium API 的太阳位置数据，通过 BLE 蓝牙 与手机同步 GPS 和时间，同时支持手动模式切换。  
 
-(See the README.md file in the upper level 'examples' directory for more information about examples.)
-
-This is the simplest buildable example. The example is used by command `idf.py create-project`
-that copies the project to user specified path and set it's name. For more information follow the [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project)
-
+双步进电机精确追踪太阳，提高太阳能采集效率。  
+通过合理调度 WiFi、BLE 和步进电机模块的休眠，实现低功耗与续航最大化。  
+内置磁力计支持系统校准，无需精确放置即可使用。  
 
 
-## How to use example
-We encourage the users to use the example as a template for the new projects.
-A recommended way is to follow the instructions on a [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project).
+ESP32C6 Solar Tracking System
 
-## Example folder contents
+This project is a solar tracking system based on ESP32C6, developed using the ESP-IDF framework.  
+It can fetch sun position data via the Stellarium API over WiFi, connect via BLE for GPS and time updates from a mobile phone, and switch to manual mode when needed.  
 
-The project **sample_project** contains one source file in C language [main.c](main/main.c). The file is located in folder [main](main).
-
-ESP-IDF projects are built using CMake. The project build configuration is contained in `CMakeLists.txt`
-files that provide set of directives and instructions describing the project's source files and targets
-(executable, library, or both). 
-
-Below is short explanation of remaining files in the project folder.
-
-```
-├── CMakeLists.txt
-├── main
-│   ├── CMakeLists.txt
-│   └── main.c
-└── README.md                  This is the file you are currently reading
-```
-Additionally, the sample project contains Makefile and component.mk files, used for the legacy Make based build system. 
-They are not used or needed when building with CMake and idf.py.
+The system uses dual stepper motors for precise solar tracking, maximizing solar energy harvesting.  
+Power consumption is optimized by carefully scheduling WiFi, BLE, and stepper motor sleep modes.  
+A built-in magnetometer allows the system to calibrate automatically and be placed anywhere without manual alignment.  
