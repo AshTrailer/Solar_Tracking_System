@@ -14,3 +14,6 @@ It can fetch sun position data via the Stellarium API over WiFi, connect via BLE
 The system uses dual stepper motors for precise solar tracking, maximizing solar energy harvesting.  
 Power consumption is optimized by carefully scheduling WiFi, BLE, and stepper motor sleep modes.  
 A built-in magnetometer allows the system to calibrate automatically and be placed anywhere without manual alignment.  
+
+![Overall Block Struct](https://github.com/user-attachments/assets/8a33c585-29f3-4e5d-a9a0-7ef7d8d22219)
+![Overall Electrical Components](https://github.com/user-attachments/assets/161c7a23-c7e1-4fbb-821c-691e0d104a4e)
