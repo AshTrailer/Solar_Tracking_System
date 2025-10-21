@@ -1,0 +1,50 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.espIdfPath": "/home/ashtrailer/esp/v5.5.1/esp-idf",
+  "idf.pythonInstallPath": "/usr/bin/python",
+  "idf.openOcdConfigs": [
+    "board/esp32c6-builtin.cfg"
+  ],
+  "idf.port": "/dev/ttyACM0",
+  "idf.toolsPath": "/home/ashtrailer/.espressif",
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32c6"
+  },
+  "clangd.path": "/home/ashtrailer/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clangd",
+  "clangd.arguments": [
+    "--background-index",
+    "--query-driver=/home/ashtrailer/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc",
+    "--compile-commands-dir=${workspaceFolder}/build"
+  ],
+  "idf.monitorPort": "/dev/ttyACM0",
+  "idf.flashType": "UART",
+  "files.associations": {
+    "freertos.h": "c",
+    "esp_netif.h": "c",
+    "esp_http_client.h": "c",
+    "esp_log.h": "c",
+    "esp_system.h": "c",
+    "esp_bt_device.h": "c",
+    "esp_bt.h": "c",
+    "task.h": "c",
+    "esp_gatts_api.h": "c",
+    "json.h": "c",
+    "nvs_flash.h": "c",
+    "cjson.h": "c",
+    "esp_timer.h": "c",
+    "nimble_port.h": "c",
+    "stepper_motor.h": "c",
+    "ble.h": "c",
+    "esp_wifi.h": "c",
+    "nimble_port_freertos.h": "c",
+    "ble_svc_gatt.h": "c",
+    "util.h": "c",
+    "cstdlib": "c",
+    "ble_svc_gap.h": "c",
+    "os.h": "c",
+    "ledc.h": "c"
+  },
+  "cmake.configureEnvironment": {
+    "IDF_PATH": "/home/ashtrailer/esp/v5.5.1/esp-idf"
+  }
+}

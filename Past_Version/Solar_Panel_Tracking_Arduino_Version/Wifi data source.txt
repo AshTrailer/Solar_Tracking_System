@@ -1,0 +1,41 @@
+https://sunrise-sunset.org/api
+
+eg:
+https://api.sunrise-sunset.org/json?lat=-37.8&lng=144.96&formatted=0
+https://aa.usno.navy.mil/data/AltAz
+https://ssd-api.jpl.nasa.gov/doc/horizons.html?utm_source=chatgpt.com
+
+suncalc
+主要功能：
+给定 日期 + UTC 时间 + 经纬度，计算：
+sunrise / sunset / solarNoon
+dawn / dusk / nauticalDawn / nauticalDusk / astronomicalDawn / astronomicalDusk
+太阳高度角 (altitude)：以弧度或度表示
+太阳方位角 (azimuth)：以弧度或度表示
+返回数据通常：
+{
+  "altitude": 45.2,
+  "azimuth": 128.5
+}
+优势：
+直接返回太阳高度角和方位角
+适合 ESP32 离线计算
+只需要经纬度 + UTC 时间，不需要外部 API
+
+
+NOAA Solar Calculator
+官方天文计算公式，精确到分钟级甚至秒级
+功能：
+给定日期、UTC 时间、经纬度，计算：
+太阳赤纬 (declination δ)
+当地时角 (H)
+太阳高度角 (Altitude)
+太阳方位角 (Azimuth)
+日出 / 日落 / 太阳正午时间
+特点：
+精度比 SunCalc 高，公式稍复杂
+适合需要高精度控制步进电机/舵机的场景
+
+
+
+
